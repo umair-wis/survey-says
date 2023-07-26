@@ -1,0 +1,30 @@
+@import "../../styles/commonStyle/variables.scss";
+
+#textfield-wrapper {
+    margin: 10px 0;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+  
+    input {
+      padding: 0.6rem 2rem;
+      border-radius: 1rem;
+      border: 1px solid rgba(0, 0, 0, 0.6);
+      background: var(--backgroundSecondary);
+      width: 100%;
+      outline: none;
+    }
+  
+    // input:focus{
+    //   border: 1px solid var(--btnBg);
+    // }
+    span{
+      position: absolute;
+      position: absolute;
+      right: 2rem;
+      top: 0.8rem;
+      svg{
+        color: var(--blackText) ;
+      }
+    }
+  }

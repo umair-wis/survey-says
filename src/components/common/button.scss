@@ -1,0 +1,31 @@
+@import "../../styles/commonStyle/variables.scss";
+
+#button-wrapper {
+    button {
+        margin-top: 20px;
+      border-radius: 0.625rem;
+      background: #1686f6;
+      box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+      border: none;
+      outline: none;
+      color: $white;
+      font-family: Inter;
+      font-size: 2.125rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      width: 20.375rem;
+      height: 4.5rem;
+      flex-shrink: 0;
+
+      &:hover {
+        border: 2px solid #1686f6;
+        background-color: white;
+        color: black;
+
+        .login-loader {
+            color: #1686f6;
+        }
+      }
+    }
+  }

@@ -1,0 +1,59 @@
+@import "../../styles/commonStyle/variables.scss";
+
+#color_guidance {
+    margin: 10rem 0;
+
+    h2 {
+        margin-bottom: 4rem;
+        max-width: 49rem;
+        width: 100%;
+        color: $black;
+        font-size: 6.4rem;
+        line-height: 7rem;
+        font-weight: 800;
+    }
+
+    .color_blk {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 3.2rem;
+
+        .color_card {
+            flex: 0 0 24%;
+            border: .1rem solid rgba(215, 221, 228, 1);
+            padding: 2rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            // margin: auto;
+
+            @media screen and (max-width: 767px) {
+                flex: 0 0 40%;
+            }
+
+            .color_pallet {
+                border: .1rem solid rgba(215, 221, 228, 1);
+                height: 14rem;
+                border-radius: .8rem;
+                margin-bottom: 2rem;
+            }
+
+            h4 {
+                font-size: 2rem;
+                line-height: 2.4rem;
+                font-weight: 800;
+                margin-bottom: .6rem;
+            }
+
+            span {
+                color: rgba(134, 141, 150, 1);
+                font-size: 1.6rem;
+                line-height: 2.1rem;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,61 @@
+#stripe-form {
+    .stripe-payment-form {
+        max-width: 50rem;
+        width: 100%;
+        margin: 3rem auto;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 3rem 2rem;
+        border-radius: 2rem;
+
+        input {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .pay_btn {
+        width: 100%;
+        max-width: 30rem;
+        margin: 4rem auto 0rem auto;
+        border: transparent;
+        border-radius: 2rem;
+        background-color: #1686FC;
+        color: white;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+
+    }
+
+    // .__PrivateStripeElement {
+    //     background-color: lightgray !important;
+    // }
+
+    // iframe {
+    //     border: none !important;
+    //     margin: 0px !important;
+    //     padding: 10px !important;
+    //     width: 1px !important;
+    //     min-width: 100% !important;
+    //     overflow: hidden !important;
+    //     user-select: none !important;
+    //     transform: translate(0px) !important;
+    //     color-scheme: light only !important;
+    //     height: 38.8px;
+    //     display: flex !important;
+    //     align-items: center;
+    // }
+
+    .StripeElement {
+        border: 1px solid #eee;
+        background: rgb(214, 210, 210);
+        border-radius: 1rem;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+
+}

@@ -1,0 +1,119 @@
+@import "../../styles/commonStyle/variables.scss";
+
+#question1 {
+    margin-top: 10rem;
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        // justify-content: flex-end;
+        min-height: calc(100vh - 13rem);
+
+
+        .text_blk {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+
+                font-size: 6.4rem;
+                line-height: 100%;
+                font-weight: 700;
+                margin-bottom: 6rem;
+            }
+
+            p {
+                font-size: 2.8rem;
+                line-height: 3.4rem;
+                color: $black;
+                margin-bottom: 1.2rem;
+                font-weight: 800;
+            }
+
+            span {
+                font-size: 2rem;
+                line-height: 2.4rem;
+                color: rgba(79, 94, 109, 1);
+
+            }
+
+            .input_blk {
+                margin-top: 10rem;
+                max-width: 67.1rem;
+                width: 100%;
+
+                input {
+                    border: initial;
+                    border-radius: initial;
+                    padding: initial;
+                    box-shadow: initial;
+
+                    &::placeholder {
+                        color: rgba(134, 141, 150, 1);
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .bottom {
+        z-index: 111;
+        background-color: $white;
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        box-shadow: 0 -4px 10px 0 rgba(239, 241, 242, 1);
+        width: 100%;
+        height: 9rem;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 4rem;
+
+        .back_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            line-height: 2.1rem;
+            font-weight: 500;
+            width: 15rem;
+            min-width: 15rem;
+            height: 5rem;
+            border-radius: 4rem;
+            // color: $black;
+
+            i {
+                // color: $black;
+                margin-right: 1rem;
+                font-size: 2.4rem;
+            }
+        }
+
+        .next_btn {
+            max-width: 15rem;
+            width: 100%;
+            height: 5rem;
+            color: $white;
+            // background-color: $primary_color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4rem;
+            border: .1rem solid transparent;
+            font-size: 1.6rem;
+            line-height: 2.1rem;
+            font-weight: 500;
+
+            i {
+                font-size: 1.2rem;
+                margin-left: 1.2rem;
+            }
+
+        }
+    }
+}

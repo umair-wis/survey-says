@@ -1,0 +1,384 @@
+@import "../styles/commonStyle/variables.scss";
+// @import "../styles/commonStyle/";
+@import url('https://fonts.cdnfonts.com/css/urban');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+
+
+    @media screen and (max-width: 1360px) {
+        font-size: 9px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 8px;
+    }
+
+    @media screen and (max-width: 1100px) {
+        font-size: 7.5px;
+    }
+
+    @media screen and (max-width: 992px) {
+        font-size: 6px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 8px;
+    }
+
+    @media screen and (max-width: 580px) {
+        font-size: 7px;
+    }
+
+    @media screen and (max-width: 460px) {
+        font-size: 6px;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: lightgray;
+    // max-width: 1px !important;
+    /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $gray_color;
+    /* color of the scroll thumb */
+    border-radius: 10px;
+    /* roundness of the scroll thumb */
+    border: 3px solid $gray_color;
+    /* creates padding around scroll thumb */
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    // font-family: 'Urban', sans-serif;
+    background-color: $white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    // color: $white;
+    display: flex;
+    // Line 2
+    flex-direction: column;
+    // Line 3
+    min-height: 100vh;
+    // height: auto;
+}
+
+#root {
+    flex: 1;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+    }
+}
+
+.site_container {
+    max-width: 124.8rem;
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 992px) {
+        padding: 0 2rem;
+    }
+}
+
+.error {
+    color: red;
+}
+
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+label {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: $black;
+}
+
+button {
+    cursor: pointer;
+
+    &:focus-within,
+    &:focus-visible,
+    &:focus {
+        outline: initial;
+        box-shadow: initial;
+        border: initial;
+    }
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.text_area {
+    max-width: 80rem;
+    width: 100%;
+    min-height: 15.2rem;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    padding: 3rem;
+    border-radius: 1.6rem;
+    background: #ffffff;
+    border: 0.1rem solid rgba(249, 155, 28, 1);
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    line-height: 100%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+    margin-bottom: 5rem;
+    // margin-bottom: 1.5rem;
+    outline: none;
+
+    &::placeholder {
+        font-size: 1.4rem;
+        color: rgba(0, 0, 0, 0.47);
+    }
+
+}
+
+.input_blk {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    // display: flex;
+    // align-items: center;
+
+    .icon_blk {
+        position: absolute;
+        right: 2rem;
+        top: 35%;
+        transform: translateY(-35%);
+
+    }
+
+
+    input {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 5.5rem;
+        padding: 0 3rem;
+        border-radius: 1.6rem;
+        background: #ffffff;
+        // border: 0.1rem solid rgba(249, 155, 28, 1);
+        border-radius: 1rem;
+        font-size: 1.8rem;
+        line-height: 100%;
+        // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+        // margin-bottom: 1.5rem;
+
+        &::placeholder {
+            font-size: 1.4rem;
+        }
+
+        &:hover {
+            border-color: $primary_color;
+            outline: none;
+        }
+
+        &:focus {
+            border-color: $primary_color;
+            outline: none;
+            box-shadow: initial;
+        }
+    }
+}
+
+.coming-soon {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    // background: rgba(255, 255, 255, 0.7);
+    // z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        color: $primary_color !important;
+    }
+}
+
+.form-error-message {
+    color: red;
+}
+
+i.passwordVisibilityReset.fa.fa-eye-slash {
+    color: $primary_color;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+i.passwordVisibilityReset.fa.fa-eye {
+    color: $primary_color;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.loaderWrapper {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// .login-clip-loader {
+//     background-image: linear-gradient(red, yellow);
+//     background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }
+
+
+// chkara ui table //
+
+.chakra-table__container {
+    height: 26rem;
+    overflow-y: auto !important;
+
+}
+
+// user dashboard layout  scss //
+
+.layout_container {
+
+
+    .side_bar_container {
+
+
+        @media screen and (max-width: 767px) {
+            flex: initial;
+            width: 250px;
+            position: fixed;
+            left: -250px;
+            top: 35px;
+            bottom: 0;
+            transition: all ease-in-out 0.3s;
+            z-index: 111;
+
+        }
+
+        &.active {
+            left: 0;
+        }
+
+
+    }
+
+    .dashboard_container {
+        // flex: 0 0 100%;
+
+    }
+}
+
+.close-button-summary {
+    height: 5rem;
+    width: 15rem;
+    min-width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $mat_black;
+    color: $white;
+    font-size: 2.1rem;
+    line-height: 2.7rem;
+    font-weight: 500;
+    border: transparent;
+    border-radius: .8rem;
+    margin: 0 3rem;
+}
+
+.modal-yes-button {
+    height: 5rem;
+    width: 15rem;
+    min-width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary_color;
+    color: white;
+    font-size: 2.1rem;
+    line-height: 2.7rem;
+    font-weight: 500;
+    border: transparent;
+    border-radius: 0.8rem;
+    margin: 0 3rem;
+}
+
+.css-1q1046h {
+    margin-top: 20px;
+}
